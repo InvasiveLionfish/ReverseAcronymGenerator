@@ -1,3 +1,5 @@
+//Successful REST client using Spring.
+
 package hello;
 
 import org.slf4j.Logger;
@@ -15,7 +17,7 @@ public class Application {
     private static final Logger log = LoggerFactory.getLogger(Application.class);
 
     public static void main(String args[]) {
-        SpringApplication.run(Application.class);
+                SpringApplication.run(Application.class);
     }
 
     @Bean
@@ -26,9 +28,10 @@ public class Application {
     @Bean
     public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
         return args -> {
-            Quote quote = restTemplate.getForObject(
+                    Quote quote = restTemplate.getForObject(
                     "http://gturnquist-quoters.cfapps.io/api/random", Quote.class);
-            log.info(quote.toString());
+                    log.info(quote.toString());
         };
     }
 }
+
