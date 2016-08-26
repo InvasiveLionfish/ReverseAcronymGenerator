@@ -29,6 +29,9 @@ dependencies {
     compile("org.springframework:spring-web")
     compile("com.fasterxml.jackson.core:jackson-databind")
     testCompile("junit:junit")
+
+    //Adding test dependencies
+    testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
 task wrapper(type: Wrapper) {
