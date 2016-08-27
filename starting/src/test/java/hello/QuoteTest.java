@@ -26,9 +26,9 @@ public class QuoteTest {
 
     }
 
-    @Test
-    public void toString() throws Exception {
-
-    }
+//    @Test
+//    public void toString() throws Exception {
+//
+//    }
 
 }
